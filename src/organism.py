@@ -11,9 +11,15 @@ class Organism:
     def __Create(self):
         for i in range(3):
             for j in range(3):
-                if (not (self.__field.Occupied(((i - 1) + self.__position[0], (j - 1) + self.__position[1]))) and
-                    (self.__field.Neighbours(((i - 1) + self.__position[0], (j - 1) + self.__position[1])) == 3)):
-                    o = Organism(((i - 1) + self.__position[0], (j - 1) + self.__position[1]), self.__field)
+                if (not (self.__field.Occupied(
+                                                (((i - 1) + self.__position[0]) % self.__field.Size()[0],
+                                                ((j - 1) + self.__position[1]) % self.__field.Size()[1]))
+                                                ) and
+                    (self.__field.Neighbours(
+                                                (((i - 1) + self.__position[0]) % self.__field.Size()[0], 
+                                                ((j - 1) + self.__position[1]) % self.__field.Size()[1])) == 3)
+                                                ):
+                    o = Organism((((i - 1) + self.__position[0]) % self.__field.Size()[0], ((j - 1) + self.__position[1]) % self.__field.Size()[0]), self.__field)
                     self.__field.AddOrganism(o)
 
     def __Die(self):
