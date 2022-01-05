@@ -19,7 +19,7 @@ class Organism:
                                                 (((i - 1) + self.__position[0]) % self.__field.Size()[0], 
                                                 ((j - 1) + self.__position[1]) % self.__field.Size()[1])) == 3)
                                                 ):
-                    o = Organism((((i - 1) + self.__position[0]) % self.__field.Size()[0], ((j - 1) + self.__position[1]) % self.__field.Size()[0]), self.__field)
+                    o = Organism((((i - 1) + self.__position[0]) % self.__field.Size()[0], ((j - 1) + self.__position[1]) % self.__field.Size()[1]), self.__field)
                     self.__field.AddOrganism(o)
 
     def __Die(self):

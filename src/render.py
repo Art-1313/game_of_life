@@ -9,4 +9,7 @@ class Render:
     def Play(self):
         for i in range(self.__iteration):
             self.__field.Draw()
-            time.sleep(0.02)
+            time.sleep(0.1)
+
+    def __Show(self):
+        pass
