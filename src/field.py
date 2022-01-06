@@ -1,6 +1,5 @@
 import numpy as np
 import organism
-import os
 
 class Field:
 
@@ -22,9 +21,7 @@ class Field:
                     o = organism.Organism((i, j), self)
                     self.__organisms.add(o)
 
-    def Draw(self):
-        os.system('clear')
-        print(self.__map)
+    def Action(self):
         for i in self.__organisms:
             i.Move()
         self.__map = self.__map_dead + self.__map_created - self.__map
