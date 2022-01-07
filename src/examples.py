@@ -14,3 +14,11 @@ spider[45][23] = spider[45][25] = spider[45][22] = spider[45][26] = spider[45][1
 spider[46][12] = spider[46][13] = spider[46][36] = spider[46][35] = 1
 spider[47][12] = spider[47][13] = spider[47][14] = spider[47][15] = spider[47][16] = spider[47][32] = spider[47][33] = spider[47][34] = spider[47][35] = spider[47][36] = 1
 spider[48][15] = spider[48][16] = spider[48][33] = spider[48][32] = 1
+
+glider_gen = np.zeros(shape=(29, 40))
+
+glider_gen[10][18] = glider_gen[10][19] = glider_gen[10][20] = glider_gen[10][21] = 1
+glider_gen[12][18] = glider_gen[12][19] = glider_gen[12][20] = glider_gen[12][21] = glider_gen[12][17] = glider_gen[12][22] = glider_gen[12][16] = glider_gen[12][23] = 1
+glider_gen[14][18] = glider_gen[14][19] = glider_gen[14][20] = glider_gen[14][21] = glider_gen[14][16] = glider_gen[14][17] = glider_gen[14][22] = glider_gen[14][23] = glider_gen[14][15] = glider_gen[14][14]= glider_gen[14][24] = glider_gen[14][25] = 1
+glider_gen[16][18] = glider_gen[16][19] = glider_gen[16][20] = glider_gen[16][21] = glider_gen[16][17] = glider_gen[16][22] = glider_gen[16][16] = glider_gen[16][23] = 1
+glider_gen[18][18] = glider_gen[18][19] = glider_gen[18][20] = glider_gen[18][21] = 1

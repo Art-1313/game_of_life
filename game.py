@@ -6,8 +6,8 @@ import field
 import render
 import examples as ex
 
-f = field.Field(ex.spider.shape, ex.spider)
+f = field.Field(ex.glider_gen.shape, ex.glider_gen)
 
-r = render.Render(f, 2)
+r = render.Render(f, 25)
 
 r.Play()

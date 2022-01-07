@@ -1,4 +1,3 @@
-import time
 import pygame as pg
 import numpy as np
 
@@ -15,11 +14,10 @@ class Render:
 
     def Play(self):
         while self.__run:
+            self.__Show()
             for event in pg.event.get():
-                # check for closing window
                 if event.type == pg.QUIT:
                         self.__run = False
-            self.__Show()
             self.__clock.tick(self.__fps)
         pg.quit()
 
